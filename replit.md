@@ -8,6 +8,16 @@ This is a comprehensive full-stack web application that provides a Discord bot f
 
 Preferred communication style: Simple, everyday language.
 
+## Recent Changes
+
+### July 18, 2025
+- ✓ Fixed vite.config.ts compatibility issue with Railway deployment (import.meta.dirname → fileURLToPath)
+- ✓ Converted from PostgreSQL database to in-memory storage system for Railway deployment simplicity
+- ✓ Implemented demo mode for Discord bot when DISCORD_TOKEN is not provided
+- ✓ Added comprehensive demo data: Dragon Lord (boosted creature), Ferumbras (boosted boss), 8 guild members
+- ✓ Created detailed README.md with Railway deployment instructions and complete command documentation
+- ✓ Added .env.example file for local development setup
+
 ## System Architecture
 
 ### Frontend Architecture
