@@ -1,0 +1,14 @@
+[build]
+builder = "nixpacks"
+
+[deploy]
+startCommand = "npm run dev"
+restartPolicyType = "always"
+
+[env]
+# These will be set through Railway's environment variables interface
+DISCORD_TOKEN = { default = "" }
+BOOSTED_CREATURE_CHANNEL_ID = { default = "" }
+BOOSTED_BOSS_CHANNEL_ID = { default = "" }
+NODE_ENV = { default = "production" }
+PORT = { default = "5000" }

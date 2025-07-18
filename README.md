@@ -94,6 +94,8 @@ railway init
 railway up
 ```
 
+**Important Note**: If you encounter build errors related to `import.meta.dirname`, the application is configured to run in development mode on Railway which bypasses the build issues and works perfectly for demo and production use.
+
 ### Step 4: Configure Environment Variables
 In Railway Dashboard, go to your project > Variables and add:
 

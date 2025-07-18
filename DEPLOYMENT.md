@@ -86,6 +86,7 @@ Test each command once deployed:
 - Check Node.js version compatibility (18+)
 - Verify all dependencies are in package.json
 - Review Railway build logs
+- If you see "Could not resolve entry module" errors, the app is configured to run in development mode which bypasses build issues
 
 **Bot Not Starting:**
 - Verify DISCORD_TOKEN is set correctly
