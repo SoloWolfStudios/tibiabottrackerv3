@@ -94,7 +94,7 @@ railway init
 railway up
 ```
 
-**Important Note**: If you encounter build errors related to `import.meta.dirname`, the application is configured to run in development mode on Railway which bypasses the build issues and works perfectly for demo and production use.
+**Important Note**: Railway deployment uses a custom build process to handle compatibility issues with the vite configuration. The bot functionality remains fully operational, with a simplified web interface for Railway deployments. For the complete dashboard experience, run locally with `npm run dev`.
 
 ### Step 4: Configure Environment Variables
 In Railway Dashboard, go to your project > Variables and add:

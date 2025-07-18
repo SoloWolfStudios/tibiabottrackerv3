@@ -110,9 +110,15 @@ Test each command once deployed:
 
 ## Performance Optimization
 
-### Railway Plan Recommendations
+### Railway Deployment Notes
+
+**Build Process**: Railway uses a custom build script (`scripts/build.sh`) that bypasses vite configuration compatibility issues. This ensures reliable deployment while maintaining all Discord bot functionality.
+
+**Web Interface**: Railway deployments include a simplified web interface for bot status monitoring. The full React dashboard is available when running locally with `npm run dev`.
+
+**Plan Recommendations**:
 - **Hobby Plan**: Suitable for small guilds (<50 members)
-- **Pro Plan**: Recommended for active communities
+- **Pro Plan**: Recommended for active communities  
 - **Team Plan**: For multiple bots or high usage
 
 ### Monitoring
