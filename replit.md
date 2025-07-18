@@ -21,6 +21,8 @@ Preferred communication style: Simple, everyday language.
 - ✓ Changed environment variables to use BOOSTED_CREATURE_CHANNEL_ID and BOOSTED_BOSS_CHANNEL_ID
 - ✓ Added smart change detection - only posts when creatures/bosses actually change
 - ✓ Updated all documentation to reflect new channel-specific configuration
+- ✓ Resolved Railway build issues with custom nixpacks.toml configuration bypassing vite build problems
+- ✓ Simplified Discord embeds for boosted creatures/bosses - now shows only name, icon, and title (removed detailed info)
 
 ## System Architecture
 

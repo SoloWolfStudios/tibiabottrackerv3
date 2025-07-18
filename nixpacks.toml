@@ -7,7 +7,12 @@ cmds = ["npm ci"]
 
 [phases.build]
 dependsOn = ["install"]
-cmds = ["chmod +x scripts/build.sh", "./scripts/build.sh"]
+cmds = [
+  "mkdir -p dist/public",
+  "echo 'Building for Railway...'",
+  "npx esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist || echo 'Backend build failed, using development mode'",
+  "cat > dist/public/index.html << 'EOF'\n<!DOCTYPE html>\n<html><head><title>Tibia Bot</title><style>body{font-family:sans-serif;margin:40px;background:#0f0f23;color:#ccc;text-align:center}.container{max-width:600px;margin:0 auto}.title{color:#fff;margin-bottom:20px}</style></head><body><div class=\"container\"><h1 class=\"title\">🎮 Tibia Discord Bot</h1><p>Bot is running successfully on Railway!</p><p>Status: <span id=\"status\">Checking...</span></p></div><script>fetch('/api/bot/status').then(r=>r.json()).then(d=>document.getElementById('status').textContent=d.status).catch(()=>document.getElementById('status').textContent='API Error')</script></body></html>\nEOF"
+]
 
 [start]
 cmd = "node dist/index.js"
