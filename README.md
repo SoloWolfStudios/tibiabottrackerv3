@@ -99,14 +99,16 @@ In Railway Dashboard, go to your project > Variables and add:
 
 ```env
 DISCORD_TOKEN=your_bot_token_here
-DISCORD_GUILD_ID=your_guild_id_here
-DISCORD_CHANNEL_ID=your_channel_id_here
+BOOSTED_CREATURE_CHANNEL_ID=your_creature_channel_id_here
+BOOSTED_BOSS_CHANNEL_ID=your_boss_channel_id_here
 ```
 
-**To get Guild and Channel IDs:**
+**To get Channel IDs:**
 1. Enable Developer Mode in Discord (User Settings > Advanced > Developer Mode)
-2. Right-click your server → "Copy Server ID" (Guild ID)
-3. Right-click your desired channel → "Copy Channel ID"
+2. Create or choose a channel for boosted creature updates → Right-click → "Copy Channel ID"
+3. Create or choose a channel for boosted boss updates → Right-click → "Copy Channel ID"
+
+**Note:** You can use the same channel for both creatures and bosses if preferred, just use the same ID for both variables.
 
 ### Step 5: Custom Domain (Optional)
 1. In Railway Dashboard, go to Settings > Domains

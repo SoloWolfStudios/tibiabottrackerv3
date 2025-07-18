@@ -12,10 +12,10 @@
   - [ ] Read Message History
 - [ ] Invite bot to Discord server with proper scopes (`bot` + `applications.commands`)
 
-### 2. Get Discord IDs
+### 2. Get Channel IDs
 - [ ] Enable Developer Mode in Discord (User Settings > Advanced > Developer Mode)
-- [ ] Get Guild ID: Right-click server → "Copy Server ID"
-- [ ] Get Channel ID: Right-click channel → "Copy Channel ID"
+- [ ] Get Creature Channel ID: Right-click your boosted creature channel → "Copy Channel ID"
+- [ ] Get Boss Channel ID: Right-click your boosted boss channel → "Copy Channel ID"
 
 ### 3. Railway Project Setup
 - [ ] Fork repository to your GitHub account
@@ -29,8 +29,8 @@ Set these in Railway Dashboard > Variables:
 
 ```env
 DISCORD_TOKEN=your_bot_token_here
-DISCORD_GUILD_ID=your_guild_id_here  
-DISCORD_CHANNEL_ID=your_channel_id_here
+BOOSTED_CREATURE_CHANNEL_ID=your_creature_channel_id_here
+BOOSTED_BOSS_CHANNEL_ID=your_boss_channel_id_here
 ```
 
 ### Deployment Files

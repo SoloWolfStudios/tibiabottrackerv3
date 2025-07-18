@@ -17,6 +17,10 @@ Preferred communication style: Simple, everyday language.
 - ✓ Added comprehensive demo data: Dragon Lord (boosted creature), Ferumbras (boosted boss), 8 guild members
 - ✓ Created detailed README.md with Railway deployment instructions and complete command documentation
 - ✓ Added .env.example file for local development setup
+- ✓ Implemented proper Discord channel posting logic for boosted creatures and bosses
+- ✓ Changed environment variables to use BOOSTED_CREATURE_CHANNEL_ID and BOOSTED_BOSS_CHANNEL_ID
+- ✓ Added smart change detection - only posts when creatures/bosses actually change
+- ✓ Updated all documentation to reflect new channel-specific configuration
 
 ## System Architecture
 
